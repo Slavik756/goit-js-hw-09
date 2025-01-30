@@ -11,16 +11,25 @@
   </head>
   <body>
     
-
-    <main>
-      <div class="container">
-        <a class="back-link" href="./index.html">Go back</a>
-        <h1 class="main-title">
-          Form
-        </h1>
-        
+    <form class="feedback-form" autocomplete="off">
+      <div class="form-item">
+        <label class="label-text">
+          Email
+          <div class="input-wrapper">
+            <input type="email" name="email" class="form-input" autofocus />
+          </div>
+        </label>
       </div>
-    </main>
+      <div class="form-item">
+        <label class="label-text">
+          Message
+          <div class="input-wrapper">
+            <textarea name="message" rows="8"></textarea>
+          </div>
+        </label>
+      </div>
+      <button class="submit" type="submit">Submit</button>
+    </form>
 
   </body>
 </html>
